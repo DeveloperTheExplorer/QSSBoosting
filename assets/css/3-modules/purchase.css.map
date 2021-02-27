@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKA,aAAa;EACX,gBAAgB,EAJL,OAAO;EAKlB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI",
+"sources": ["purchase.sass"],
+"names": [],
+"file": "purchase.css"
+}

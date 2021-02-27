@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>QSSBoosting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/logo/logoAccentDark.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js" type="text/JavaScript"></script>
+    <script type="application/javascript" src="assets/js/jquery-ui/jquery-ui.js"></script>
+    <script type="application/javascript" src="assets/js/jqBootstrapValidation.js"></script>
+    <script type="application/javascript" src="assets/js/contact_me.js"></script>
+    <script type="application/javascript" src="https://cdn.jsdelivr.net/gh/restingcoder/discord-widget@1.1/discord-widget.min.js"></script><a href="https://discord.gg/GEwcEag" target="_blank" class="discord"><span class="fab fa-discord"></span>DISCORD</a>
+    <header><a href="/" class="logo"><img src="assets/img/logo/qsslogoWhiteAccent.png" alt="logo"></a>
+      <div class="nav"><a href="/">HOME</a><a href="#about" class="js-scroll-trigger">ABOUT</a><a href="#boost" class="js-scroll-trigger">BOOST</a><a href="#" data-display="Contact" class="config popup">CONTACT</a></div>
+    </header>
+    <div class="full-screen-back main blurred">
+      <div class="header-txt absolute">
+        <h1 class="txt-center">SAFE AND RELIABLE ELO BOOSTING</h1>
+        <h3 class="txt-center">We boost on North America, Europe West, Europe East & Nordic, Brazil, Latin America, Russia, Turkey & Oceania server</h3>
+      </div>
+    </div>
+    <main class="blurred"><img src="assets/img/logo/logoAccentDark.png" alt="logo" class="logo">
+      <div class="main">
+        <section id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 txt-center">
+                <h1 class="section-heading txt-stylish">Why Choose Us?</h1>
+                <h2 class="section-subheading txt-muted">We're glad you asked.</h2>
+              </div>
+            </div>
+            <div class="row txt-center">
+              <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x txt-primary"></i><i class="fas fa-user-tie fa-stack-1x txt-black"></i></span>
+                <h3 class="service-heading">Incredible Customer Service</h3>
+                <p class="txt-muted">Our customer support team is always ready to help and will answer any questions you have. 24/7 availability!</p>
+              </div>
+              <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x txt-primary"></i><i class="fas fa-laptop fa-stack-1x txt-black"></i></span>
+                <h3 class="service-heading">Professional Boosters</h3>
+                <p class="txt-muted">Our team consists of high diamond to challenger players capable of finishing any boost in record-breaking times.</p>
+              </div>
+              <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x txt-primary"></i><i class="fas fa-lock fa-stack-1x txt-black"></i></span>
+                <h3 class="service-heading">Secure Private VPNs</h3>
+                <p class="txt-muted">Dramatically reduces ban rate / account suspension. We have had 0 issues to this date!</p>
+              </div>
+              <div class="col-md-12 med-mar-top"></div>
+              <div class="col-md-6 col-md-push-3">
+                <div id="discord" class="discord-widget"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="boost">
+          <div class="container txt-center">
+            <h1 class="txt-center">Select Your Boost</h1>
+            <div class="row sm-trans">
+              <div class="col-sm-8 col-sm-push-2 col-md-3 col-md-push-0">
+                <div data-display="SoloDuo" class="config popup pointer SoloDuo"><span><i class="fas fa-plus"></i></span>
+                  <h2 class="txt-center">Select Solo/Duo</h2>
+                </div>
+              </div>
+              <div class="col-sm-8 col-sm-push-2 col-md-3 col-md-push-0">
+                <div data-display="YourRank" class="config popup pointer YourRank"><span><i class="fas fa-plus"></i></span>
+                  <h2 class="txt-center">Your Rank</h2>
+                </div>
+              </div>
+              <div class="col-sm-8 col-sm-push-2 col-md-3 col-md-push-0">
+                <div data-display="BoostType" class="config popup pointer BoostType"><span><i class="fas fa-plus"></i></span>
+                  <h2 class="txt-center">Select Boost Type</h2>
+                </div>
+              </div>
+              <div class="col-sm-8 col-sm-push-2 col-md-3 col-md-push-0 lastBoost numOfGames">
+                <div class="config">
+                  <button type="submit" class="winbtn minus">-</button>
+                  <input type="number" value="4" class="wininput">
+                  <button type="submit" class="winbtn plus">+</button>
+                  <h2 class="txt-center">Number of Net Wins</h2>
+                </div>
+              </div>
+              <div class="col-sm-8 col-sm-push-2 col-md-3 col-md-push-0 lastBoost wishRank">
+                <div data-display="WishRank" class="config popup pointer WishRank"><span><i class="fas fa-plus"></i></span>
+                  <h2 class="txt-center">Desired Rank</h2>
+                </div>
+              </div>
+            </div>
+            <div class="configSelect txt-center">
+              <select id="mounth">
+                <option value="hide"> Server</option>
+                <option value="Brazil">Brazil</option>
+                <option value="EU-Nordic &amp;amp; East">EU-Nordic & East</option>
+                <option value="EU-West">EU-West</option>
+                <option value="Garena">Garena</option>
+                <option value="Japan">Japan</option>
+                <option value="Latin America North">Latin America North</option>
+                <option value="Latin America South">Latin America South</option>
+                <option value="North America">North America</option>
+                <option value="Oceania">Oceania</option>
+                <option value="Russia">Russia</option>
+                <option value="Turkey">Turkey</option>
+              </select>
+            </div>
+            <div class="priceQuote">
+              <h1 class="price txt-center"></h1>
+            </div>
+            <div data-tooltip="Please Select Your Current Server." class="row relative">
+              <div class="col-xs-12"></div>
+              <button id="quePurchase" style="width: 220px" class="disabled button txt-stylish config popup">Purchase</button>
+            </div>
+          </div>
+        </section>
+        <section id="rateCarousel" data-ride="carousel" class="carousel slide sm-padding">
+          <h1 class="txt-center center-block sm-padding txt-stylish">What our customers think of us.</h1>
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="carousel-rate">
+                <div class="center">
+                  <div class="center-block">
+                    <div class="user center-block user1"></div>
+                    <h3 class="txt-center txt-stylish">Comixy</h3>
+                  </div>
+                  <div class="center-block txt-center"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                    <h3>Amazing service, great price, hard carried and was fast! 10/10 would recommend.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-rate">
+                <div class="center">
+                  <div class="center-block">
+                    <div class="user center-block user2"></div>
+                    <h3 class="txt-center txt-stylish">Assertindominance </h3>
+                  </div>
+                  <div class="center-block txt-center"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                    <h3>Fantastic service and great communication! Can carry in any role and do so rapidly. Overall is a great experience talking with the booster and also helping me while I'm hardstuck! I'd recommend these guys to anyone who needs a reliable and fast boost!</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-rate">
+                <div class="center">
+                  <div class="center-block">
+                    <div class="user center-block user3"></div>
+                    <h3 class="txt-center txt-stylish">Doublesnift </h3>
+                  </div>
+                  <div class="center-block txt-center"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                    <h3>Super pleased with the work that was done. Very laid back player and easy to play with. Highly recommend Sheldon!</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-rate">
+                <div class="center">
+                  <div class="center-block">
+                    <div class="user center-block user4"></div>
+                    <h3 class="txt-center txt-stylish">Verybaddianaplayer </h3>
+                  </div>
+                  <div class="center-block txt-center"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                    <h3>Just got a duo boost to Gold IV from Epricola, we won EVERY SINGLE GAME, he hard carried and didnt tilt even when he was getting camped, he 2v1'd 3v1'd, and basically singlehandedly carried the entire game + he was really friendly on discord too. Highly recommend purchasing their boost if you're on the fence about it.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-rate">
+                <div class="center">
+                  <div class="center-block">
+                    <div class="user center-block user5"></div>
+                    <h3 class="txt-center txt-stylish">KoreanWood10 </h3>
+                  </div>
+                  <div class="center-block txt-center"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                    <h3>I bought solo boost for silver 4 -gold 4 mid lane on fresh mmr account. Got it done pretty quickly with the insane LP gains. While he was playing, I spectated him and watched him crush players. I also asked several questions such as why he made this or that decision. He also gives helpful advice in general.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-rate">
+                <div class="center">
+                  <div class="center-block">
+                    <div class="user center-block user6"></div>
+                    <h3 class="txt-center txt-stylish">Willyboyo8 </h3>
+                  </div>
+                  <div class="center-block txt-center"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                    <h3>Great service and price and also good at communicating. Purchased a Duo Boost from Plat 1 to Diamond 4 and completed quite fast (went 10-2). Skill level was good and did not tilt after losses. Overall, very satisfied. Very nice guy.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a href="#rateCarousel" data-slide="prev" class="left carousel-control carousel-rate"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#rateCarousel" data-slide="next" class="right carousel-control carousel-rate"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+          <ol class="carousel-indicators">
+            <li data-target="#rateCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#rateCarousel" data-slide-to="1"></li>
+            <li data-target="#rateCarousel" data-slide-to="2"></li>
+            <li data-target="#rateCarousel" data-slide-to="3"></li>
+            <li data-target="#rateCarousel" data-slide-to="4"></li>
+            <li data-target="#rateCarousel" data-slide-to="5"></li>
+          </ol>
+        </section>
+      </div>
+      <footer class="blurred">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-push-1 col-md-4 col-xs-12"><img src="assets/img/logo/qsslogoAccent2.png" alt="" height="50px">
+              <h4 style="line-height: 2;" class="txt-muted">QSS Boosting isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</h4>
+            </div>
+            <div class="col-md-push-3 col-md-4 col-xs-12">
+              <h2 class="txt-stylish">Contact Us</h2>
+              <h4 style="line-height: 2;" class="txt-muted">We are an elo boosting organization dedicated to providing the fastest services while emphasizing security. Our customer service team is happy to help you out with any of your questions or issues.</h4><a href="#" data-display="Contact" class="config popup button txt-stylish">Contact</a>
+            </div>
+            <div class="col-xs-12 txt-center">
+              <hr>
+              <div class="text-center">Copyright © 2019 All rights reserved</div><br>
+              <div class="media">
+                <ul>
+                  <li><a target="_blank" href="https://www.facebook.com/QSSBoosting" class="ic-fb"><span class="icons icon-facebook fab fa-facebook-f"></span></a></li>
+                  <li><a target="_blank" href="https://www.reddit.com/r/Lolboosting/comments/c2iirb/get_boosted_by_a_challenger_player_today_elevate/" class="ic-tw"><span class="icons icon-reddit fab fa-reddit-alien"></span></a></li>
+                  <li><a target="_blank" href="https://discord.gg/GEwcEag" class="ic-yt"><span class="icons icon-discord fab fa-discord"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <div id="BoostType" class="full-config">
+      <div class="exit">x</div>
+      <div class="menu">
+        <div data-option="div" class="option">
+          <h1>Division Boost</h1>
+          <h5>Go from one division to the next. Ex. Silver II → Gold IV. Recommended for 0-70LP.</h5>
+        </div>
+        <div data-option="win" class="option">
+          <h1>Net Wins Boost</h1>
+          <h5>If a booster loses a game they will win 2 games in return. <br>Ex: 3 Net Wins = 4 Wins + 1 Loss. Recommended for Promotional Series.</h5>
+        </div>
+      </div>
+    </div>
+    <div id="YourRank" class="full-config">
+      <div class="exit">x</div>
+      <div class="menu">
+        <div data-boostVal="0" data-option="iron" class="option"><img src="assets/img/ranks/iron.png" class="rankImg">
+          <h3>IRON</h3>
+        </div>
+        <div data-boostVal="1" data-option="bronze" class="option"><img src="assets/img/ranks/bronze.png" class="rankImg">
+          <h3>BRONZE</h3>
+        </div>
+        <div data-boostVal="2" data-option="silver" class="option"><img src="assets/img/ranks/silver.png" class="rankImg">
+          <h3>SILVER</h3>
+        </div>
+        <div data-boostVal="3" data-option="gold" class="option"><img src="assets/img/ranks/gold.png" class="rankImg">
+          <h3>GOLD</h3>
+        </div>
+        <div data-boostVal="4" data-option="platinum" class="option"><img src="assets/img/ranks/platinum.png" class="rankImg">
+          <h3>PLATINUM</h3>
+        </div>
+        <div data-boostVal="5" data-option="diamond" class="option"><img src="assets/img/ranks/diamond.png" class="rankImg">
+          <h3>DIAMOND</h3>
+        </div>
+      </div>
+    </div>
+    <div id="YourDiv" class="full-config">
+      <div class="exit">x</div>
+      <div class="menu">
+        <div data-boostVal="3" data-option="I" class="option">
+          <h3 class="divSel">I</h3>
+        </div>
+        <div data-boostVal="2" data-option="II" class="option">
+          <h3 class="divSel">II</h3>
+        </div>
+        <div data-boostVal="1" data-option="III" class="option">
+          <h3 class="divSel">III</h3>
+        </div>
+        <div data-boostVal="0" data-option="IV" class="option">
+          <h3 class="divSel">IV</h3>
+        </div>
+      </div>
+    </div>
+    <div id="SoloDuo" class="full-config">
+      <div class="exit">x</div>
+      <div class="menu">
+        <div data-option="Solo" class="option">
+          <h1>Solo</h1>
+          <h5>Have a booster play on your account. Win games while doing nothing!</h5>
+        </div>
+        <div data-option="Duo" class="option">
+          <h1>Duo</h1>
+          <h5>Play on your own account and duo with a booster. Watch them dominate your games!</h5>
+        </div>
+      </div>
+    </div>
+    <div id="WishRank" class="full-config">
+      <div class="exit">x</div>
+      <div class="menu">
+        <div data-boostVal="0" data-option="iron" class="option"><img src="assets/img/ranks/iron.png" class="rankImg">
+          <h3>IRON</h3>
+        </div>
+        <div data-boostVal="1" data-option="bronze" class="option"><img src="assets/img/ranks/bronze.png" class="rankImg">
+          <h3>BRONZE</h3>
+        </div>
+        <div data-boostVal="2" data-option="silver" class="option"><img src="assets/img/ranks/silver.png" class="rankImg">
+          <h3>SILVER</h3>
+        </div>
+        <div data-boostVal="3" data-option="gold" class="option"><img src="assets/img/ranks/gold.png" class="rankImg">
+          <h3>GOLD</h3>
+        </div>
+        <div data-boostVal="4" data-option="platinum" class="option"><img src="assets/img/ranks/platinum.png" class="rankImg">
+          <h3>PLATINUM</h3>
+        </div>
+        <div data-boostVal="5" data-option="diamond" class="option"><img src="assets/img/ranks/diamond.png" class="rankImg">
+          <h3>DIAMOND</h3>
+        </div>
+      </div>
+    </div>
+    <div id="WishDiv" class="full-config">
+      <div class="exit">x</div>
+      <div class="menu">
+        <div data-boostVal="3" data-option="I" class="option">
+          <h3 class="divSel">I</h3>
+        </div>
+        <div data-boostVal="2" data-option="II" class="option">
+          <h3 class="divSel">II</h3>
+        </div>
+        <div data-boostVal="1" data-option="III" class="option">
+          <h3 class="divSel">III</h3>
+        </div>
+        <div data-boostVal="0" data-option="IV" class="option">
+          <h3 class="divSel">IV</h3>
+        </div>
+      </div>
+    </div>
+    <div id="Purchase" class="full-config">
+      <div class="exit">x</div>
+      <div class="container">
+        <h1 class="txt-center txt-primary">Boost Account Information</h1>
+        <div class="row">
+          <div class="tb-container col-xs-12 col-sm-4 col-sm-push-2">
+            <input id="emailPurchase" name="Email" type="text" placeholder=" " autocomplete="new-name" class="aumd-tb purchaseInputs">
+            <label for="Email" class="aumd-tb-label">Email</label><span class="validation"></span>
+          </div>
+          <div class="tb-container col-xs-12 col-sm-4 col-sm-push-2 duoRequired">
+            <input id="usernamePurchase" name="Username" type="text" placeholder=" " autocomplete="new-password" class="aumd-tb purchaseInputs">
+            <label for="Username" class="aumd-tb-label">In-Game Username</label><span class="validation"></span>
+          </div>
+          <div class="col-sm-12 soloRequired"></div>
+          <div class="tb-container col-xs-12 col-sm-4 col-sm-push-2 soloRequired">
+            <input id="loginPurchase" name="Login" type="text" placeholder=" " autocomplete="new-password" class="aumd-tb purchaseInputs">
+            <label for="Login" class="aumd-tb-label">Blizzard Login Username</label><span class="validation"></span>
+          </div>
+          <div class="tb-container col-xs-12 col-sm-4 col-sm-push-2 soloRequired">
+            <input id="passPurchase" name="Password" type="password" placeholder=" " autocomplete="new-password" class="aumd-tb purchaseInputs">
+            <label for="Password" class="aumd-tb-label">Blizzard Login Password</label><span class="validation"></span>
+          </div>
+          <div class="col-sm-12"></div>
+          <div class="tb-container col-xs-12 col-sm-8 col-sm-push-2">
+            <textarea id="inquiryPurchase" name="Text" type="text" placeholder="Special requests or instructions..." class="purchaseInputs"></textarea>
+          </div>
+          <div class="tb-container col-xs-12 col-sm-8 col-sm-push-2">
+            <button id="sendPurchase" style="width: 100%" class="button disabled txt-stylish">Pay With PayPal</button>
+          </div>
+          <div class="priceQuote txt-primary col-xs-12">
+            <h1 class="price txt-center"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Contact" class="full-config">
+      <div class="exit">x</div>
+      <div class="container">
+        <h1 class="txt-center txt-primary">Contact Us</h1>
+        <form id="contactForm" class="row">
+          <div class="tb-container col-xs-12 col-sm-4 col-sm-push-2">
+            <input id="nameContact" name="Name" type="text" placeholder=" " autocomplete="new-name" class="aumd-tb contactInputs">
+            <label for="Name" class="aumd-tb-label">Name</label><span class="validation"></span>
+          </div>
+          <div class="tb-container col-xs-12 col-sm-4 col-sm-push-2">
+            <input id="emailContact" name="Email" type="text" placeholder=" " autocomplete="new-email" class="aumd-tb contactInputs">
+            <label for="Email" class="aumd-tb-label">Email</label><span class="validation"></span>
+          </div>
+          <div class="tb-container col-xs-12 col-sm-8 col-sm-push-2">
+            <textarea id="inquiryContact" name="Text" type="text" placeholder="How can we help you?" class="contactInputs"></textarea>
+          </div>
+          <div class="tb-container col-xs-12 col-sm-8 col-sm-push-2">
+            <button id="sendContact" style="width: 100%" data-display="Contact" class="button disabled txt-stylish">Send</button>
+          </div>
+          <div id="success" class="tb-container col-xs-12 col-sm-8 col-sm-push-2"></div>
+        </form>
+      </div>
+    </div>
+    <!-- Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5d3b30009b94cd38bbe97e09/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!-- End of Tawk.to Script-->
+    <script src="assets/js/functions.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  </body>
+</html>

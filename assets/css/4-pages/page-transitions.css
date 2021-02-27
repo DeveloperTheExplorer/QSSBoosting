@@ -1,0 +1,24 @@
+.index, .page2 {
+  position: absolute; }
+
+.slide-in {
+  -webkit-animation: slide-in 0.7s ease-out forwards;
+  animation: slide-in 0.7s ease-out forwards; }
+
+@-webkit-keyframes slide-in {
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible; }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes slide-in {
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible; }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }

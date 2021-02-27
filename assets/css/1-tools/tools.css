@@ -1,0 +1,25 @@
+.super-thin-font {
+  font-weight: 100; }
+
+.thin-font {
+  font-weight: 300; }
+
+.medium-font {
+  font-weight: 500; }
+
+.bold-font {
+  font-weight: 700; }
+
+.super-bold-font {
+  font-weight: 900; }
+
+.chevron-right {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  -webkit-transform: rotate(45px);
+  -ms-transform: rotate(45px);
+  transform: rotate(45px); }

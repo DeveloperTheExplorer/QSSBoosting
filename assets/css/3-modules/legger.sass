@@ -1,0 +1,72 @@
+.legger
+  position: absolute
+  height: 300px
+  bottom: 0
+  left: -1980px
+  right: 0
+  white-space: nowrap
+  overflow: hidden
+
+  span.back, span.next
+    cursor: pointer
+    text-align: center
+    position: fixed
+    z-index: 2
+    bottom: 0
+    height: 300px
+    width: 50px
+    padding-top: 130px
+    font-size: 50px
+    transition: all 0.3s ease-out
+    &::before
+      content: ''
+      position: absolute
+      height: 100%
+      width: 100%
+      top: 0
+
+  .chevron-left, .chevron-right
+    position: absolute
+    transition: all 0.3s ease-out
+
+  .back
+    left: 0
+    &::before
+      left: -50px
+      box-shadow: 16px 0px 57px 23px rgba(0, 0, 0, 0.5)
+    &:hover
+      left: -5px
+
+
+  .next
+    right: 0
+    &::before
+      right: -50px
+      box-shadow: -16px 0px 57px 23px rgba(0, 0, 0, 0.5)
+    &:hover
+        right: -5px
+
+
+  div
+    position: relative
+    margin: 0
+    margin-left: -4px
+    text-align: center
+    display: inline-block
+    width: 450px
+    height: 100%
+    padding: 20px
+    transition: all 0.5s ease-out
+
+  .num-1
+    background-color: rgba(23, 63, 94, 0.95)
+  .num-2
+    background-color: rgba(32, 99, 155, 0.95)
+  .num-3
+    background-color: rgba(60, 174, 163, 0.95)
+  .num-4
+    background-color: rgba(246, 213, 91, 0.95)
+  .num-5
+    background-color: rgba(199, 0, 57, 0.95)
+  .num-6
+    background-color: rgba(144, 12, 62, 0.95)

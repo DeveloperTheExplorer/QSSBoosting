@@ -1,0 +1,579 @@
+$accent-color: #ec9124
+$black: #333
+$main-black: #1d1d1d
+$grey: #777
+a
+  color: $accent-color
+  text-decoration: none
+  font-family: 'Montserrat', sans-serif
+  font-weight: 300
+  &:hover
+    text-decoration: underline
+
+
+h1, h2, h3, h4, h5, h6, p, span
+  font-family: 'Montserrat', sans-serif
+  font-weight: 300
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus
+  outline: none
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+.pointer
+  cursor: pointer
+
+
+// POSITIONING AND DISPLAY
+.block
+  display: block
+.absolute
+  position: absolute
+.relative
+  position: relative
+
+// MARGINS
+.sm-mar-top
+  margin-top: 20px
+
+.med-mar-top
+  margin-top: 50px
+
+.lg-mar-top
+  margin-top: 100px
+
+
+// TRANSITIONS
+.sm-trans
+  transition: all 0.3s ease-out
+.med-trans
+  transition: all 0.5s ease-out
+
+
+
+// TEXTS
+.txt-center
+  text-align: center !important
+
+.txt-black
+  color: $main-black !important
+
+.txt-grey
+  color: $grey !important
+
+.txt-silver
+  color: #eee !important
+
+.txt-med-bold
+  font-weight: 500 !important
+
+.txt-stylish
+  font-variant-caps: all-petite-caps
+  text-transform: uppercase
+  font-weight: 400
+  font-style: italic
+
+.txt-black
+  color: $main-black !important
+
+.txt-muted
+  font-weight: 400
+  color: #666
+
+.txt-primary
+  color: $accent-color !important
+
+
+
+
+// BUTTONS
+.button
+  background-color: $accent-color
+  color: $main-black
+  border: none
+  cursor: pointer
+  font-weight: 700
+  padding: 0.75em 1.5em
+  font-size: 1.2em
+  line-height: 2em
+  letter-spacing: 0.2em
+  transition: all 0.3s ease-out
+  &:hover
+    opacity: 0.8
+
+
+.button.disabled
+  opacity: 0.3
+  cursor: default
+  &:hover
+    opacity: 0.3
+
+a.button:hover
+  text-decoration: none
+
+
+// ALERTS
+.alert
+  position: relative
+  padding: 10px
+  color: #fff
+  button.close
+    position: absolute
+    right: 0
+    border: none
+    background-color: transparent
+.alert-danger
+  background-color: #c4302b
+.alert-success
+  background-color: #0a9142
+
+
+///SETTINGS
+//The padding is no longer used on the actual element but rather as a margin on the container
+$padding: .75rem
+$label-padding: $padding!default
+$font-size: 1.5rem
+$text-color: #fff
+$select-color: $accent-color
+//Bootstrap validation colors, sub in your own
+$success-color: #00e25e
+$danger-color: #e91e63
+$warning-color: #fbc02d
+//Used for placeholder and the placeholder line
+$placeholder-color: #999
+
+// TEXTAREAS
+textarea
+  background-color: transparent
+  color: $text-color
+  border: 1px solid $placeholder-color
+  font-size: $font-size
+  transition: all .14s ease-in-out
+  padding: $padding
+
+  &:focus, &:not(:placeholder-shown)
+    border-color: $select-color
+    border-width: 2px
+
+
+// TEXTBOXES
+///Importable Styles
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill
+  -webkit-text-fill-color: $text-color !important
+
+.tb-container
+  position: relative
+  margin-top: $padding * 3
+  textarea
+    min-width: 100%
+    max-width: 100%
+    min-height: 200px
+
+.aumd-tb-label
+  position: absolute
+  color: $placeholder-color
+  top: 50%
+  transform: translate($label-padding, -50%)
+  pointer-events: none
+  transition: all .14s ease-in-out
+
+
+input[type="text"].aumd-tb,
+input[type="password"].aumd-tb
+  background-color: transparent
+  color: $text-color
+  border: none
+  border-bottom: 1px solid $placeholder-color
+  padding: $padding $label-padding
+  font-size: $font-size
+  display: block
+  box-sizing: border-box
+  width: 100%
+  &:focus
+    outline: none
+
+  &.c-fix,
+  &:focus,
+  &:not(:placeholder-shown),
+
+    border-color: transparent
+    ~ label
+      color: $select-color
+      font-size: $font-size * .9
+      //Come up with a calculation for this
+      top: calc(10% - 1.5rem)
+      transform: translate($label-padding, 0%)
+
+    ~span:after
+      width: 100%
+      left: 0
+
+
+  &::-webkit-input-placeholder
+    color: transparent
+
+  &::-moz-placeholder
+    color: transparent
+
+  &:-ms-input-placeholder
+    color: transparent
+
+  ~ .validation
+    position: relative
+    display: block
+    color: $placeholder-color
+    font-size: $font-size * .9
+    visibility: hidden
+    max-height: 0
+    height: 0
+    transition: all .14s ease-in-out
+    &:after
+      transition: all .14s ease-in-out
+      left: 50%
+      content: ''
+      position: absolute
+      width: 0
+      height: 2px
+      visibility: visible
+      background-color: $select-color
+
+
+  .has-success &,
+  &.form-control-success
+    border-color: transparent
+    ~ label
+      color: $success-color
+
+    ~.validation
+      color: $success-color
+      &:not(:empty)
+        height: $font-size
+        line-height: $font-size
+        max-height: $font-size
+        display: initial
+        visibility: visible
+
+      &:after
+        background-color: $success-color
+        width: 100%
+        left: 0%
+
+
+
+  .has-warning &,
+  &.form-control-warning
+    border-color: transparent
+    ~ label
+      color: $warning-color
+
+    ~.validation
+      color: $warning-color
+      &:not(:empty)
+        height: $font-size
+        line-height: $font-size
+        max-height: $font-size
+        display: initial
+        visibility: visible
+
+      &:after
+        background-color: $warning-color
+        width: 100%
+        left: 0
+
+
+
+  .has-danger &,
+  &.form-control-danger
+    border-color: transparent
+    ~ label
+      color: $danger-color
+
+    ~.validation
+      color: $danger-color
+      &:not(:empty)
+        height: $font-size
+        line-height: $font-size
+        max-height: $font-size
+        display: initial
+        visibility: visible
+
+      &:after
+        background-color: $danger-color
+        width: 100%
+        left: 0
+
+
+
+
+
+
+
+// SELECTION
+.configSelect
+  margin-top: 30px
+  position: relative
+  width: fit-content
+
+$select-color: $accent-color
+$select-background: $main-black
+$select-width: 220px
+$select-height: 40px
+
+.select-hidden
+  display: none
+  visibility: hidden
+  padding-right: 10px
+
+.select
+  cursor: pointer
+  text-align: left
+  display: inline-block
+  position: relative
+  font-size: 16px
+  color: $select-color
+  width: $select-width
+  height: $select-height
+
+.select-styled
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  border-bottom: 2px solid $select-color
+  padding: 8px 15px
+  transition: 0.2s all ease-out
+  &:after
+    content: ""
+    width: 0
+    height: 0
+    border: 7px solid transparent
+    border-color: $select-color transparent transparent transparent
+    position: absolute
+    top: 16px
+    right: 10px
+
+  &:hover
+    background-color: darken($select-background, 2)
+
+  &:active, &.active
+    background-color: darken($select-background, 5)
+    &:after
+      top: 9px
+      border-color: transparent transparent $select-color transparent
+
+.select-options
+  display: none
+  position: absolute
+  top: 100%
+  right: 0
+  left: 0
+  z-index: 999
+  margin: 0
+  padding: 0
+  list-style: none
+  background-color: darken($select-background, 5)
+  li
+    margin: 0
+    padding: 12px 0
+    text-indent: 15px
+    border-top: 1px solid darken($select-background, 10)
+    transition: 0.1.5s all ease-out
+    &:hover
+      color: $select-background
+      background: $select-color
+
+    &[rel="hide"]
+      display: none
+
+
+
+// MISCELANEOUS
+.blurred
+  transition: 0.3s all ease-out
+
+.blurred.activated
+  filter: blur(10px)
+
+
+
+/*Tooltip styling
+[data-tooltip], .tooltip
+  position: relative
+
+/* Base styles for the entire tooltip
+
+[data-tooltip]
+  &:before, &:after
+    font-family: 'Montserrat', sans-serif
+    font-weight: 300
+    position: absolute
+    visibility: hidden
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0)
+    opacity: 0
+    -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24)
+    -moz-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24)
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24)
+    -webkit-transform: translate3d(0, 0, 0)
+    -moz-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+    pointer-events: none
+
+.tooltip
+  &:before, &:after
+    position: absolute
+    visibility: hidden
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0)
+    opacity: 0
+    -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24)
+    -moz-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24)
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24)
+    -webkit-transform: translate3d(0, 0, 0)
+    -moz-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+    pointer-events: none
+
+/* Show the entire tooltip on hover and focus
+[data-tooltip]
+  &:hover
+    &:before, &:after
+      visibility: visible
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100)
+      opacity: 1
+  &:focus
+    &:before, &:after
+      visibility: visible
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100)
+      opacity: 1
+
+.tooltip
+  &:hover
+    &:before, &:after
+      visibility: visible
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100)
+      opacity: 1
+  &:focus
+    &:before, &:after
+      visibility: visible
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100)
+      opacity: 1
+  &:before
+    z-index: 1001
+    border: 6px solid transparent
+    background: transparent
+    content: ""
+
+/* Base styles for the tooltip's directional arrow
+[data-tooltip]:before
+  z-index: 1001
+  border: 6px solid transparent
+  background: transparent
+  content: ""
+
+/* Base styles for the tooltip's content area
+.tooltip:after
+  z-index: 1000
+  padding: 8px
+  width: 150px
+  background-color: #000
+  background-color: rgba(0, 0, 0, 0.7)
+  color: rgba(255, 255, 255, 0.8)
+  content: attr(data-tooltip)
+  font-size: 14px
+  line-height: 1.2
+
+[data-tooltip]
+  &:after
+    z-index: 1000
+    padding: 8px
+    width: 150px
+    background-color: #000
+    background-color: rgba(0, 0, 0, 0.7)
+    color: rgba(255, 255, 255, 0.8)
+    content: attr(data-tooltip)
+    font-size: 14px
+    line-height: 1.2
+  &:before, &:after
+    bottom: 75%
+    left: 50%
+
+/* Directions
+
+/* Top (default)
+.tooltip
+  &:before, &:after
+    bottom: 75%
+    left: 50%
+
+.tooltip-top
+  &:before, &:after
+    bottom: 75%
+    left: 50%
+
+[data-tooltip]:before, .tooltip:before, .tooltip-top:before
+  margin-left: -6px
+  margin-bottom: -10px
+  border-top-color: #000
+  border-top-color: rgba(0, 0, 0, 0.6)
+
+/* Horizontally align top/bottom tooltips
+
+[data-tooltip]:after, .tooltip:after, .tooltip-top:after
+  margin-left: -60px
+  text-align: center
+
+[data-tooltip]
+  &:hover
+    &:before, &:after
+      -webkit-transform: translateY(-12px)
+      -moz-transform: translateY(-12px)
+      transform: translateY(-12px)
+  &:focus
+    &:before, &:after
+      -webkit-transform: translateY(-12px)
+      -moz-transform: translateY(-12px)
+      transform: translateY(-12px)
+
+.tooltip
+  &:hover
+    &:before, &:after
+      -webkit-transform: translateY(-12px)
+      -moz-transform: translateY(-12px)
+      transform: translateY(-12px)
+  &:focus
+    &:before, &:after
+      -webkit-transform: translateY(-12px)
+      -moz-transform: translateY(-12px)
+      transform: translateY(-12px)
+
+.tooltip-top
+  &:hover
+    &:before, &:after
+      -webkit-transform: translateY(-12px)
+      -moz-transform: translateY(-12px)
+      transform: translateY(-12px)
+  &:focus
+    &:before, &:after
+      -webkit-transform: translateY(-12px)
+      -moz-transform: translateY(-12px)
+      transform: translateY(-12px)
